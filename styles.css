@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1f1f1f;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(to bottom right, #005bea, #00c6fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #e6faff;
+    font-size: 18px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #fff;
+    color: #005bea;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #dff8ff;
+}
+
+
+.facts {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.facts h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.facts-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fact-card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.fact-card .number {
+    font-size: 40px;
+    font-weight: 800;
+    color: #00a8ff;
+    margin-bottom: 15px;
+}
+
+.fact-card h3 {
+    margin-bottom: 10px;
+}
+
+/* BLOG SECTION */
+.blog {
+    padding: 80px 40px;
+    background: #eef6ff;
+}
+
+.blog h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #005bea;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #1f1f1f;
+    color: white;
+}
