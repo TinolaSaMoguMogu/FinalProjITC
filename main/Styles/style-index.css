@@ -100,6 +100,11 @@ body {
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    
+}
+.facts-container,.fact-card:hover{
+    transform: translateY(-9.5px);
+    transition: transform 0.3s ease-out;
 }
 
 .fact-card {
