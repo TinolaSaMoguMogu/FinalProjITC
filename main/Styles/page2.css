@@ -91,6 +91,8 @@ body {
     padding: 80px 20px;
     display: flex;
     justify-content: center;
+    
+
 }
 
 .blog-card {
@@ -99,16 +101,20 @@ body {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+    background: #fffcf2;
+    
 }
 
 .blog-card h2 {
     margin-bottom: 20px;
     font-size: 32px;
+    color: #262525
 }
 
 .blog-card p {
     line-height: 1.7;
     margin-bottom: 16px;
+    color: #262525
 }
 
 
