@@ -1,4 +1,13 @@
-
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +65,9 @@ body {
     text-align: center;
     padding: 30px;
 }
-
+.hero-inner{
+    animation: fadeInUp 0.8s ease-out;
+}
 .hero-inner h1 {
     color: white;
     font-size: 48px;
@@ -99,16 +110,19 @@ body {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+     background: #fffcf2;
 }
 
 .blog-card h2 {
     margin-bottom: 20px;
     font-size: 32px;
+    color: #262525
 }
 
 .blog-card p {
     line-height: 1.7;
     margin-bottom: 16px;
+    color: #262525
 }
 
 

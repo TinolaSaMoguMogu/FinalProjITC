@@ -1,4 +1,13 @@
-
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +67,9 @@ body {
     padding: 40px;
 }
 
+.hero-content {
+    animation: fadeInUp 0.8s ease-out;
+}
 .hero h1 {
     font-size: 48px;
     color: white;
@@ -108,6 +120,7 @@ body {
 .facts-container,.fact-card:hover{
     transform: translateY(-9.5px);
     transition: transform 0.3s ease-out;
+   
 }
 
 .fact-card {
@@ -146,6 +159,7 @@ body {
 .blog {
     padding: 80px 40px;
     background: #eef6ff;
+    
 }
 
 .blog h2 {
