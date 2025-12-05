@@ -8,6 +8,7 @@
         transform: translateY(0);
     }
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -16,15 +17,17 @@
 }
 
 body {
-    background: #f7f9fc;
-    color: #333;
+    background: linear-gradient(to bottom right, #183771, #060218);
+    background-attachment: fixed;
+    color: #ffffff;
 }
 
-
+/* NAVBAR */
 .navbar {
     width: 100%;
     padding: 20px 40px;
-    background: #0a0f24;
+    background: rgba(10, 15, 36, 0.4); /* translucent */
+    backdrop-filter: blur(6px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,19 +60,21 @@ body {
     text-underline-offset: 8px;
 }
 
-
+/* HERO */
 .hero {
     height: 75vh;
-    background: linear-gradient(to bottom right, #1a73e8, #52c5ff);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 30px;
 }
-.hero-inner{
+
+.hero-inner {
     animation: fadeInUp 0.8s ease-out;
 }
+
 .hero-inner h1 {
     color: white;
     font-size: 48px;
@@ -78,7 +83,7 @@ body {
 }
 
 .hero-inner p {
-    color: #e7f7ff;
+    color: #d7ebff;
     font-size: 18px;
     margin-top: 10px;
 }
@@ -99,42 +104,41 @@ body {
     background: #e9f7ff;
 }
 
-
+/* BLOG SECTION */
 .blog-section {
     padding: 80px 20px;
     display: flex;
     justify-content: center;
-    
-
 }
 
 .blog-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.15); /* translucent glass card */
+    backdrop-filter: blur(8px);
     max-width: 900px;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 6px 30px rgba(0,0,0,0.1);
-    background: #fffcf2;
-    
+    box-shadow: 0 6px 30px rgba(0,0,0,0.2);
+    color: #ffffff;
 }
 
 .blog-card h2 {
     margin-bottom: 20px;
     font-size: 32px;
-    color: #262525
+    color: #ffffff;
 }
 
 .blog-card p {
     line-height: 1.7;
     margin-bottom: 16px;
-    color: #262525
+    color: #e9e9e9;
 }
 
-
+/* FOOTER */
 .footer {
     text-align: center;
     padding: 20px;
-    background: #0a0f24;
+    background: rgba(10, 15, 36, 0.35); /* translucent footer */
+    backdrop-filter: blur(6px);
     color: white;
     margin-top: 60px;
 }
