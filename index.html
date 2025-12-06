@@ -7,163 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main/Styles/index.css" />
 
-   <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Inter', sans-serif;
-    }
-
-    body {
-        background: linear-gradient(135deg, #0a1e63, #020c2e);
-        color: #fff;
-        min-height: 100vh;
-        overflow: hidden;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 25px 80px;
-    }
-
-    .logo {
-        font-size: 24px;
-        font-weight: 700;
-    }
-
-    .logo span {
-        background: linear-gradient(90deg, #3b82f6, #9333ea);
-        padding: 5px 12px;
-        border-radius: 8px;
-    }
-
-    /* NAVIGATION */
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 40px;
-        position: relative;
-    }
-
-    nav ul li {
-        position: relative;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #d4d4d4;
-        font-weight: 500;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 0.3s ease;
-    }
-
-    nav ul li a:hover {
-        font-weight: 700;
-        color: #fff;
-    }
-
-
-    nav ul li a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 0;
-        height: 3px;
-        background: #6d28d9;
-        border-radius: 3px;
-        transition: width 0.3s ease;
-    }
-
-    nav ul li a:hover::after {
-        width: 100%;
-    }
-
-    /* SEARCH BOX */
-    .search-box {
-        display: flex;
-        align-items: center;
-        background: rgba(255,255,255,0.1);
-        padding: 10px 20px;
-        border-radius: 30px;
-        gap: 10px;
-    }
-
-    .search-box input {
-        background: transparent;
-        border: none;
-        outline: none;
-        color: #fff;
-    }
-
-    /* MAIN SECTION */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 80px;
-        gap: 50px;
-        height: calc(100vh - 120px);
-    }
-
-    .left {
-        max-width: 650px;
-    }
-
-    .left h1 {
-        font-size: 85px;
-        font-weight: 800;
-        line-height: 1.05;
-    }
-
-    .left p {
-        margin-top: 20px;
-        max-width: 420px;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-    .left button {
-        margin-top: 30px;
-        padding: 14px 32px;
-        border: none;
-        border-radius: 10px;
-        background: linear-gradient(90deg, #2563eb, #7c3aed);
-        color: #fff;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-    /* IMAGE + GRADIENT BOX */
-    .right {
-        position: relative;
-        width: 500px;
-    }
-
-    .gradient-box {
-        width: 420px;
-        height: 580px;
-        background: linear-gradient(135deg, #2562aa, #302273);
-        border-radius: 25px;
-        position: absolute;
-        top: 30px;
-        left: 27px;
-        z-index: 0;
-    }
-
-    .right img {
-        width: 475px;
-        border-radius: 25px;
-        position: relative;
-        z-index: 1;
-    }
-</style>
 
 </head>
 
@@ -182,10 +27,13 @@
     </nav>
 
     <header>
-        <div class="left">
+        <div class="left fade">
             <h1>Build a Future<br>Free From<br>Corruption</h1>
             <p>Empowering citizens through digital literacy and transparency.</p>
-            <form action="main/Infos/MainPage.html"><button>Explore</button></form>
+
+            <form action="main/Infos/MainPage.html">
+                <button>Explore</button>
+            </form>
         </div>
 
         <div class="right">
@@ -193,5 +41,18 @@
             <img src="main/Assets/website photo.png" alt="AI Tech Illustration">
         </div>
     </header>
+
+<script>
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        document.querySelector(".left").classList.add("fade-out");
+        setTimeout(() => {
+            form.submit();
+        }, 400);
+    });
+</script>
+
 </body>
 </html>
